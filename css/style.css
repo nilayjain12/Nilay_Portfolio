@@ -19,6 +19,10 @@ body {
   background: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -1291,3 +1295,55 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  font-family: "Space Mono", monospace;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav li a {
+  color: #ff7300 !important;
+  font-weight: normal;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .navbar-nav li a:hover {
+  background-color: #E68323;
+  color: #ffffff !important;
+}
+
+/* Sticky Navbar */
+.navbar-fixed-top {
+  position: sticky !important;
+  top: 0;
+}
+
+/* Collapsible Menu on Small Screens */
+@media (max-width: 768px) {
+  .navbar-header .navbar-toggle {
+      border: none;
+  }
+  
+  .navbar-toggle .icon-bar {
+      background-color: #ff7300;
+  }
+
+  /* Navbar in collapsed mode */
+  #navbar {
+      background-color: #ffffff;
+  }
+
+  /* Navbar links in collapsed mode */
+  .navbar-collapse .navbar-nav li a {
+      /* Optional: Adjust padding for collapsed links */
+      padding: 8px 10px;
+  }
+}
