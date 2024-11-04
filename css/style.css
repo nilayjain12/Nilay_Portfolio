@@ -951,7 +951,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-consult .choose {
-  width: 50%;
+  width: 100%;
   padding: 4em;
 }
 @media screen and (max-width: 768px) {
@@ -1301,6 +1301,7 @@ input[type="text"] {
 .navbar {
   background-color: #ffffff;
   font-family: "Space Mono", monospace;
+  font-size: 14px;
   z-index: 1000;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1311,7 +1312,7 @@ input[type="text"] {
 .navbar .navbar-brand,
 .navbar .navbar-nav li a {
   color: #ff7300 !important;
-  font-weight: normal;
+  font-weight:normal;
   transition: color 0.3s, background-color 0.3s;
 }
 
