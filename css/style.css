@@ -1323,7 +1323,7 @@ input[type="text"] {
 
 /* Sticky Navbar */
 .navbar-fixed-top {
-  position: sticky !important;
+  position:fixed !important;
   top: 0;
 }
 
