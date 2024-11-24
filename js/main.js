@@ -115,6 +115,20 @@
 		}
 	};
 
+	document.addEventListener('DOMContentLoaded', function () {
+		const navLinks = document.querySelectorAll('.nav-link');
+		const navbarCollapse = document.getElementById('navbar');
+	
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				if (navbarCollapse.classList.contains('in')) { // For Bootstrap 3
+					navbarCollapse.classList.remove('in');
+					navbarCollapse.classList.add('collapse');
+				}
+			});
+		});
+	});	
+
 	const skillsWayPoint = function() {
 		if ($('#fh5co-skills').length > 0) {
 			$('#fh5co-skills').waypoint(function(direction) {
