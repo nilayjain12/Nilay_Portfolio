@@ -784,6 +784,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
+  z-index: 1;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -910,6 +911,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-consult {
+  z-index: 1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1299,6 +1301,7 @@ input[type="text"] {
 
 /* Navbar Styles */
 .navbar {
+  z-index: 1050;
   background-color: #ffffff;
   font-family: "Space Mono", monospace;
   font-size: 14px;
